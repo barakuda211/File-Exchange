@@ -3,8 +3,6 @@ class InitialMigration < ActiveRecord::Migration[6.0]
     create_table :users do |t|
       t.integer :id_user
       t.string :login
-      t.string :mail
-      t.string :password
       t.integer :admission
       t.timestamps
     end

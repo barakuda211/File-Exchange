@@ -6,7 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!(login: 'Дима Админ', id_user: -211, admission: -1337, mail: '...@mail.ru', password: 'qwerty')
+User.create!(email: "123@localhost.com",
+               password: "some_password",
+               reset_password_token: nil,
+               reset_password_sent_at: nil,
+               remember_created_at: nil,
+               id_user: -211,
+               login: 'Dima')
 
 UserFile.create!(name: 'text.txt', id_file: -100, id_user: -211, location: '/', directory?: false)
 OpenFile.create!(id_file: -100, link: 'empty', id_user: -211, password_file: 'qwerty')
