@@ -1,7 +1,19 @@
 <html>
 <head>
   <ul>
-    <p>File Exchange</p>
+    <h2>File Exchange</h2>
   </ul>
 </head>
+
+<body>
+<p>Your files:</p>
+<% @files.each do |file| %>
+
+  <td><%= file.name %></td>
+
+<% end %>
+
+<p><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+</body>
+
 </html>
