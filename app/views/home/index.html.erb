@@ -9,10 +9,11 @@
 <p>Your files:</p>
 <% @files.each do |file| %>
 
-  <td><%= file.name %></td>
+  <td><%= file.data_file_name %></td>
 
 <% end %>
 
+<p><%= link_to "Add file", new_file_path %></p>
 <p><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
 </body>
 
