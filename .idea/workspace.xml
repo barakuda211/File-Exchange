@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78c3813-7a3c-4263-9f00-b7dd8284be66" name="Default Changelist" comment="edited db username">
+    <list default="true" id="e78c3813-7a3c-4263-9f00-b7dd8284be66" name="Default Changelist" comment="renamed user">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,7 @@
       <workItem from="1609147938760" duration="19886000" />
       <workItem from="1609177115293" duration="578000" />
       <workItem from="1609177712471" duration="49000" />
-      <workItem from="1609177763837" duration="7994000" />
+      <workItem from="1609177763837" duration="8676000" />
     </task>
     <task id="LOCAL-00001" summary="added gem devise and updated databases">
       <created>1608323174641</created>
@@ -275,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609185302724</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="renamed user">
+      <created>1609187360715</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609187360715</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +312,8 @@
     <MESSAGE value="deleted confirmation, added new auth key, added file size validation" />
     <MESSAGE value="deleted columns for confirmation" />
     <MESSAGE value="edited db username" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited db username" />
+    <MESSAGE value="renamed user" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed user" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="162" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609181766466">
@@ -328,54 +336,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609177759920" />
-    <state width="1877" height="355" key="GridCell.Tab.0.bottom" timestamp="1609185588607">
+    <state width="1877" height="355" key="GridCell.Tab.0.bottom" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.0.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588607" />
-    <state width="1877" height="355" key="GridCell.Tab.0.center" timestamp="1609185588607">
+    <state width="1877" height="355" key="GridCell.Tab.0.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.0.center" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.0.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588607" />
-    <state width="1877" height="355" key="GridCell.Tab.0.left" timestamp="1609185588607">
+    <state width="1877" height="355" key="GridCell.Tab.0.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.0.left" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.0.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588607" />
-    <state width="1877" height="355" key="GridCell.Tab.0.right" timestamp="1609185588607">
+    <state width="1877" height="355" key="GridCell.Tab.0.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.0.right" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.0.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588607" />
-    <state width="1877" height="355" key="GridCell.Tab.1.bottom" timestamp="1609185588496">
+    <state width="1877" height="355" key="GridCell.Tab.0.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.1.bottom" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.1.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588496" />
-    <state width="1877" height="355" key="GridCell.Tab.1.center" timestamp="1609185588495">
+    <state width="1877" height="355" key="GridCell.Tab.1.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.1.center" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.1.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588495" />
-    <state width="1877" height="355" key="GridCell.Tab.1.left" timestamp="1609185588495">
+    <state width="1877" height="355" key="GridCell.Tab.1.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.1.left" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.1.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588495" />
-    <state width="1877" height="355" key="GridCell.Tab.1.right" timestamp="1609185588495">
+    <state width="1877" height="355" key="GridCell.Tab.1.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.1.right" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.1.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588495" />
-    <state width="1877" height="355" key="GridCell.Tab.2.bottom" timestamp="1609185588496">
+    <state width="1877" height="355" key="GridCell.Tab.1.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.2.bottom" timestamp="1609187305487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.2.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588496" />
-    <state width="1877" height="355" key="GridCell.Tab.2.center" timestamp="1609185588496">
+    <state width="1877" height="355" key="GridCell.Tab.2.bottom/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305487" />
+    <state width="1877" height="355" key="GridCell.Tab.2.center" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.2.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588496" />
-    <state width="1877" height="355" key="GridCell.Tab.2.left" timestamp="1609185588496">
+    <state width="1877" height="355" key="GridCell.Tab.2.center/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.2.left" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.2.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588496" />
-    <state width="1877" height="355" key="GridCell.Tab.2.right" timestamp="1609185588496">
+    <state width="1877" height="355" key="GridCell.Tab.2.left/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
+    <state width="1877" height="355" key="GridCell.Tab.2.right" timestamp="1609187305486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="355" key="GridCell.Tab.2.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609185588496" />
+    <state width="1877" height="355" key="GridCell.Tab.2.right/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187305486" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609181604749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,8 +404,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1607174898636" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609187550462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1280.51.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1609187550462" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/File_Exchange@Development__File_Exchange.rcov" NAME="Development: File Exchange Coverage Results" MODIFIED="1609185588469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="File Exchange" />
+    <SUITE FILE_PATH="coverage/File_Exchange@Development__File_Exchange.rcov" NAME="Development: File Exchange Coverage Results" MODIFIED="1609187305447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="File Exchange" />
   </component>
 </project>
