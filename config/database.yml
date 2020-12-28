@@ -82,6 +82,7 @@ test:
 #
 production:
   <<: *default
-  database: File_Exchange_production
-  username: postgres
+  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['FILE_EXCHANGE_DATABASE'] %>#File_Exchange_production
+  username: <%= ENV['FILE_EXCHANGE_DATABASE_USER'] %>#postgres
   password: <%= ENV['FILE_EXCHANGE_DATABASE_PASSWORD'] %>
