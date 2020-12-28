@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable, :omniauthable,
          omniauth_providers: [:github]
-  # validates :id_user, presence: true
+
   has_many_attached :files
   has_many :open_files
 
