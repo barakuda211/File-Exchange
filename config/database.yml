@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: File_Exchange_production
-  username: File_Exchange
+  username: postgres
   password: <%= ENV['FILE_EXCHANGE_DATABASE_PASSWORD'] %>
