@@ -1,47 +1,51 @@
 class FilesController < ApplicationController
-  before_action :set_us_file#, only: [:show, :download]
 
   def index
   end
 
   def show
+    @file = current_user.files.find(params[:id])
+    @size = @file.byte_size.to_s + ' B'
+    if @file.byte_size > 1024
+      @size = (@file.byte_size*1.0/1024).round(2).to_s + ' KB'
+    end
+    if @file.byte_size > 1024*1024
+      @size = (@file.byte_size*1.0/1024/1024).round(2).to_s + ' MB'
+    end
   end
 
-  def new
-
+  def destroy
+    puts '*****************'
+    puts params
+    puts '*****************'
+    current_user.files.find(params[:id]).purge
+    redirect_to root_path
   end
 
   def create
-    x = file_params
-    puts "******************"
-    puts x
-    puts "******************"
+    @file = file_params[:files]
+    if current_user.files.attach(file_params[:files])
+      redirect_to  file_path(current_user.files.last)
 
-    @us_file = UserFile.create(x)
-    @us_file.id_user = current_user.id
-    if @us_file.save
-      #ok!
-      redirect_to 'home/index'
     else
-      render "new"
-      #error!
+      render 'new'
     end
   end
 
   private
 
   def file_params
-    params.require(:user_file).permit(:data )
+    params.require(:data).permit(:files )
   end
 
-  def set_us_file
-    @us_file = UserFile.new()
-    @us_file.id_user = current_user.id
-  end
 
 end
 
+#**************
+# {"data"=>#<ActionDispatch::Http::UploadedFile:0x000000000d8e9790
+# @tempfile=#<Tempfile:C:/Users/barakuda/AppData/Local/Temp/RackMultipart20201226-13732-11wl5xh.txt>,
+# @original_filename="temp.txt", @content_type="text/plain",
+# @headers="Content-Disposition: form-data; name=\"user_file[data]\"; filename=\"temp.txt\"\r\nContent-Type: text/plain\r\n">}
+# **************
+#
 
-#Parameters: {"authenticity_token"=>"0BrnFgT4Jptg4xOHI9SqHEK+1INi03uvCOdeXQfdAlttc2MBu+YMKSUqLfWZKOEc9rSQXEviZOPmyTZ2b+zH9w==",
-# "file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x000000000ba1ce20 @tempfile=#<Tempfile:C:/Users/barakuda/AppData/Local/Temp/RackMultipart20201220-13132-13gbfc4.png>, @original_filename="green.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file[file]\"; filename=\"green.png\"\r\nContent-Type: image/png\r\n">},
-# "commit"=>"Save File"}           "file"=>{"image"=>[#<ActionDispatch::Http::UploadedFile:0x000000000c4915b8 @tempfile=#<Tempfile:C:/Users/barakuda/AppData/Local/Temp/RackMultipart20201220-7792-1wia93y.png>, @original_filename="blue.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file[image][]\"; filename=\"blue.png\"\r\nContent-Type: image/png\r\n">]}, "commit"=>"Save File"}

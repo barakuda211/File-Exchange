@@ -8,9 +8,9 @@
 <body>
 <p>Your files:</p>
 <% @files.each do |file| %>
-
-  <td><%= file.data_file_name %></td>
-
+  <li>
+    <%= link_to file.filename, file_path(file) %>
+  </li>
 <% end %>
 
 <p><%= link_to "Add file", new_file_path %></p>

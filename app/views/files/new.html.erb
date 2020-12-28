@@ -1,5 +1,5 @@
 <h2>Add new file:</h2>
-  <%= form_for @us_file, url: {action: "create"} do |form| %>
-    <%= form.file_field :data %>
-    <%= form.submit %>
-  <% end %>
+<%= form_for :data, url: {action: "create"} do |form| %>
+  <%= form.file_field :files %>
+  <%= form.submit %>
+<% end %>
