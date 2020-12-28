@@ -13,5 +13,4 @@ User.create!(email: "123@localhost.com",
                remember_created_at: nil,
                login: 'Dima')
 
-UserFile.create!(name: 'text.txt', id_file: -100, id_user: 1, location: '/', directory?: false)
-OpenFile.create!(id_file: -100, link: 'empty', id_user: 1, password_file: 'qwerty')
+

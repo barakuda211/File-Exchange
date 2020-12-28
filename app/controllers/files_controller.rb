@@ -1,4 +1,5 @@
 class FilesController < ApplicationController
+  @msg = ' '
 
   def index
   end
@@ -15,19 +16,20 @@ class FilesController < ApplicationController
   end
 
   def destroy
-    puts '*****************'
-    puts params
-    puts '*****************'
     current_user.files.find(params[:id]).purge
     redirect_to root_path
   end
 
   def create
     @file = file_params[:files]
-    if current_user.files.attach(file_params[:files])
-      redirect_to  file_path(current_user.files.last)
 
+    current_user.files.attach file_params[:files]
+
+    if current_user.files.last.byte_size < 1024*1024*5
+      redirect_to  file_path current_user.files.last
     else
+      current_user.files.last.purge
+      @msg = "File size must be less than 5MB!"
       render 'new'
     end
   end
